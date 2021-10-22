@@ -15,15 +15,11 @@ void broker(int i) {
 	try {
 		function(i);
 	}
-	// catch(logic_error err) { // catch specific exception with different exception thrown
-	// 	throw "We have a problem";
-	// }
-	// catch(exception ex) { // catch specific exception if you want to catch a message
-	// 	throw ex;
-	// }
-	catch(...) {
-		cout << "Broker swept problems under the carpet " << endl;
-		throw;
+	catch(logic_error err) { // catch specific exception with different exception thrown
+		throw "We have a problem";
+	}
+	catch(exception ex) { // catch specific exception if you want to catch a message
+		throw ex;
 	}
 }
 int main(void) {

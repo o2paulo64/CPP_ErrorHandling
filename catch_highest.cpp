@@ -19,9 +19,9 @@ int main(void) {
 		catch(exception &ex) {
 			cout << "Exception: " << ex.what() << endl;
 		}
-		// catch(char const *ex) {
-		// 	cout << "Exception: " << ex << endl;
-		// }
+		catch(char const *ex) {
+			cout << "Catched: " << ex << endl;
+		}
 		// catch(...) {
 		// 	cout << "Exception: " << ex << endl;
 		// }

@@ -6,7 +6,7 @@ void unexp(void) {
 	cout << "Unexpected exception arrived!" << endl;
 	throw;
 }
-void function(void) {// throw(bad_exception) {
+void function(void){// throw(bad_exception) {
 	throw 3.14; 
 }
 int main(void) {

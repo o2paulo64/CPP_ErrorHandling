@@ -12,7 +12,7 @@ void function(int i) throw (string,Class) {
 	default: cout << "OK" << endl;
     }
 }
-void level(int i) throw(Class) {
+void level(int i) throw(int) {
     try {
 	function(i);
     } catch(string &exc) {
